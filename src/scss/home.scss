@@ -1,0 +1,512 @@
+//====================================================================================================
+.hero-section {
+   position: relative;
+
+
+
+   min-height: calc(100vh - 116px);
+   display: flex;
+   flex-direction: column;
+
+
+
+   padding-top: 116px;
+   background: $sectionColor;
+
+   @media (max-width: $tablet) {
+      min-height: calc(100vh - 75px);
+
+      padding-top: 75px;
+   }
+
+   // .hero-section__wrapper
+
+   &__wrapper {
+
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 1%;
+      min-height: calc(100vh - 116px);
+
+      @media (max-width: $tablet) {
+         min-height: calc(100vh - 75px);
+
+         & p,
+         h2 {
+            @include adaptiveValue("font-size", 54, 34, 0, $maxWidth, 991.98);
+            font-size: toRem(34);
+         }
+
+
+
+
+
+      }
+
+
+   }
+
+   // .hero-section__greeting
+
+   &__greeting {
+      flex: 1 1 50%;
+      padding: 20px;
+   }
+
+   // .hero-section__welcome-text
+
+   &__welcome-text {
+      font-size: toRem(54);
+      color: $buttonsColor;
+      line-height: 1.3;
+
+      max-width: toRem(400);
+      position: relative;
+      z-index: 3;
+
+
+   }
+
+   &__welcome-text span {
+      font-weight: 500;
+   }
+
+   // .hero-section__action
+
+   &__action {
+      flex: 1 1 50%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 20px;
+      z-index: 2;
+
+
+   }
+
+   // .hero-section__action-text
+
+   &__action-text {
+      align-self: start;
+      font-size: toRem(54);
+      z-index: 2;
+   }
+
+   // .hero-section__action-button
+
+   &__action-button {
+      align-self: end;
+   }
+
+   // .hero-section__login
+
+   &__login {}
+
+   &__image {
+      position: absolute;
+      left: 15%;
+      top: 35%;
+      z-index: 1;
+
+
+
+
+
+      @media (max-width: $tablet) {
+         left: 10%;
+         top: 25%;
+
+      }
+
+      @media (max-width: 768px) {}
+
+      & img {
+         height: 70vh;
+
+
+
+      }
+   }
+}
+
+
+//====================================================================================================
+
+//зменшити слайдер 
+//додати стрілку вниз яка переноситиме до якогось блоку
+// .best-story {
+//    padding: 50px 0 0 0;
+//    margin: 0 0 20px 0;
+
+//    @media (max-width: toEm(639.98)) {
+//       padding: 54px 0 0 0;
+//    }
+
+
+//    // .best-story__bigwrapper
+
+//    &__bigwrapper {}
+
+//    // .best-story__slider
+
+//    &__slider {}
+
+//    // .best-story__wrapper
+
+//    &__wrapper {}
+
+//    // .best-story__slide
+
+//    &__slide {}
+
+
+// }
+
+// .swiper {
+//    width: 100%;
+
+//    min-height: 600px;
+
+
+
+// }
+
+// .swiper-wrapper {}
+
+// .swiper-slide {
+//    text-align: center;
+//    font-size: 18px;
+//    background: #fff;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+
+// }
+
+// .swiper-slide img {
+//    display: block;
+//    width: 100%;
+//    height: 100%;
+//    object-fit: cover;
+// }
+
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+//about section
+
+.about {
+   padding: toRem(30) 0 0 0;
+   background-color: $bgMainColor ;
+
+   // .about__wrapper
+
+   &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+   }
+
+   // .about__text-block
+
+   &__text-block {
+      padding: 0 10px;
+      flex: 0 1 50%;
+
+   }
+
+   // .about__header
+
+   &__header {
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: toRem(32);
+      font-weight: 400;
+      color: $buttonsColor;
+
+   }
+
+   // .about__text
+
+   &__text {
+      line-height: 1.3;
+      box-sizing: border-box;
+      text-align: justify;
+      padding: 0 toRem(20);
+
+      & p {
+         padding: toRem(10) 0;
+      }
+   }
+
+   // .about__image
+
+   &__image {
+
+      flex: 0 1 50%;
+   }
+
+   &__image img {
+      width: 100%;
+   }
+}
+
+
+.study {
+
+   // .study__wrapper
+
+   &__wrapper {
+      display: flex;
+   }
+
+   // .study__img
+
+   &__img {
+
+      flex: 0 1 50%;
+   }
+
+   &__img img {
+      width: 100%;
+   }
+
+   // .study__text
+
+   &__text {
+      flex: 0 1 50%;
+
+      justify-self: end;
+
+      display: flex;
+      justify-self: center;
+      align-items: center;
+
+      padding: 10px 30px;
+
+   }
+
+   // .study__header
+
+   &__header {
+      padding-bottom: toRem(15);
+      font-size: toRem(32);
+   }
+
+   // .study__main-text
+
+   &__main-text {
+      margin-bottom: toRem(20);
+      color: rgb(0, 0, 0);
+      line-height: 1.2;
+      padding-bottom: 20px;
+   }
+
+   // .study__button
+
+   &__button {
+      font-size: toRem(26);
+   }
+}
+
+.header-study {}
+
+.sign-up-button {}
+
+
+.text-block {
+
+   // .text-block__wrapper
+
+   &__wrapper {}
+}
+
+
+
+
+//переробити кнопку 
+//додати слайдеру стрілки
+
+.articles {
+   padding: 40px 0;
+
+   // .articles__action
+
+   &__action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 10px;
+   }
+
+   // .articles__new
+
+   &__new {
+      font-size: toRem(32);
+      color: $buttonsColor;
+      line-height: 1.4;
+
+      font-weight: 500;
+
+   }
+
+   // .articles__button
+
+   &__button {
+      background-color: #4ea0d7;
+      padding: 10px 20px;
+      line-height: 1.2;
+      border-radius: 5%;
+      border: #000 1px solid;
+
+
+   }
+
+   // .articles__slider
+
+   &__slider {
+      overflow: hidden;
+      position: relative;
+      padding: 0 50px;
+   }
+
+   // .articles__wrapper
+
+   &__wrapper {}
+
+   // .articles__slide
+
+   &__slide img {
+      width: 100%;
+      max-height: 400px;
+   }
+}
+
+
+
+.swiper-articles {}
+
+.swiper-wrapper {}
+
+.swiper-slide img {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+
+//====================================================================================================
+
+
+.team {
+   padding: 30px 10px;
+   margin: 20px 0;
+
+
+   // .team__bigwrapper
+
+   &__bigwrapper {}
+
+   // .team__header
+
+   &__header {
+      font-size: toRem(32);
+      color: $buttonsColor;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      font-weight: 500;
+   }
+
+   // .team__slider
+
+   &__slider {
+      overflow: hidden;
+      position: relative;
+   }
+
+   // .team__wrapper
+
+   &__wrapper {}
+
+   // .team__slide
+
+   &__slide {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__slide img {
+      width: 100%;
+      max-height: 400px;
+      /* Це робить зображення круглим */
+      object-fit: cover;
+      /* Забезпечує обрізання зображення, щоб воно відповідало контейнеру */
+      border: 1px solid $buttonsColor;
+
+
+   }
+
+   // .team__image
+
+   &__image {
+      margin-bottom: 10px;
+      border-radius: 50%;
+   }
+
+   // .team__name
+
+   &__name {
+      margin-bottom: 5px;
+      font-size: toRem(20);
+
+   }
+
+   // .team__info
+
+   &__info {}
+}
+
+.swiper-team {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+
+
+
+
+
+
+
+
+
+//====================================================================================================

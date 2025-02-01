@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      /* Основний блок */
+      .hero-section {
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background-color: #1e1e1e;
+         color: #ffffff;
+         text-align: center;
+         overflow: hidden;
+      }
+
+      /* Заголовок */
+      .hero-title {
+         font-size: 4rem;
+         opacity: 0;
+         transform: translateY(-50px);
+         transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+
+      /* Підзаголовок */
+      .hero-subtitle {
+         font-size: 1.5rem;
+         margin-top: 20px;
+         opacity: 0;
+         transform: translateY(50px);
+         transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+         transition-delay: 0.5s;
+      }
+
+      /* Підсвічування (underline) */
+      .underline {
+         display: block;
+         width: 100px;
+         height: 2px;
+         background-color: #ffffff;
+         opacity: 0;
+         transform: scaleX(0);
+         transition: opacity 1s ease-out, transform 1s ease-out;
+         transition-delay: 1.5s;
+      }
+   </style>
+   <title>Document</title>
+</head>
+
+<div class="hero-section">
+   <h1 class="hero-title">Назва Платформи</h1>
+   <p class="hero-subtitle">Короткий вступний текст, що пояснює основну ідею платформи.</p>
+   <span class="underline"></span>
+</div>
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      // Поява заголовка
+      const heroTitle = document.querySelector(".hero-title");
+      heroTitle.style.opacity = "1";
+      heroTitle.style.transform = "translateY(0)";
+
+      // Поява підзаголовка
+      const heroSubtitle = document.querySelector(".hero-subtitle");
+      heroSubtitle.style.opacity = "1";
+      heroSubtitle.style.transform = "translateY(0)";
+
+      // Поява підсвічування (underline)
+      const underline = document.querySelector(".underline");
+      underline.style.opacity = "1";
+      underline.style.transform = "scaleX(1)";
+   });
+
+
+</script>
+
+</html>

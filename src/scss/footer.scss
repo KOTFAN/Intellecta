@@ -1,0 +1,203 @@
+.footer {
+   background-color: #333333;
+   color: #FFFFFF;
+   padding: 30px 0 20px 0;
+   font-size: 16px;
+   margin: 0 -10px;
+
+   // .footer__container
+
+   &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+
+      margin: 0 auto;
+   }
+
+
+
+   // .footer__description
+
+   &__description {
+      font-size: 14px;
+      color: #AAAAAA;
+   }
+
+   // .footer__links
+
+   &__links {
+
+
+
+      & h4 {
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
+
+      & ul {
+         list-style: none;
+         padding: 0;
+
+      }
+
+      & ul li {
+         margin-bottom: 8px;
+
+         & a {
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+               color: $buttonsColor;
+            }
+         }
+      }
+   }
+
+   // .footer__social
+
+   &__social {
+
+
+      & h4 {
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
+
+      & a {
+         display: inline-block;
+         margin-right: 10px;
+      }
+
+      img {
+         width: 30px;
+         transition: opacity 0.3s ease;
+
+         &:hover {
+            opacity: 0.7;
+         }
+      }
+   }
+
+   // .footer__contact
+
+   &__contact {
+
+
+      & h4 {
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
+
+      & p {
+         margin-bottom: 8px;
+         color: #AAAAAA;
+      }
+   }
+
+   // .footer__subscribe
+
+   &__subscribe {
+
+
+
+      & h4 {
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
+
+      & form {
+         display: flex;
+         flex-direction: column;
+         max-width: toRem(300);
+      }
+
+      & input[type="email"] {
+
+         padding: 10px;
+         border: 1px solid #AAAAAA;
+         border-radius: 1%;
+
+         font-size: 14px;
+         margin-bottom: toRem(10);
+      }
+
+      & button {
+         padding: 10px 20px;
+         border: none;
+         color: $buttonsColor;
+         color: #FFFFFF;
+
+         cursor: pointer;
+         font-size: 14px;
+         transition: background-color 0.3s ease;
+
+         &:hover {
+            color: $buttonsColor;
+         }
+      }
+   }
+
+   &__buttom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #444444;
+      font-size: 14px;
+      color: #AAAAAA;
+   }
+}
+
+// .footer__bottom
+
+.footer-element {
+   flex: 0 1 25%;
+   padding: toRem(10);
+
+   @media (max-width: 1000px) {
+      flex: 0 1 50%;
+      margin: 0 auto;
+
+      & h4 {
+         font-size: toRem(22);
+
+      }
+
+      & a {
+         font-size: toRem(18);
+
+      }
+
+      & p {
+         font-size: toRem(18);
+
+      }
+
+   }
+
+   @media (max-width: 630px) {
+      flex: 0 1 100%;
+      margin: 0 auto;
+
+      & h4 {
+         font-size: toRem(30);
+
+      }
+
+      & a {
+         font-size: toRem(22);
+
+      }
+
+      & p {
+         font-size: toRem(22);
+
+      }
+
+   }
+
+}
+
+//====================================================================================================

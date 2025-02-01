@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Головна сторінка"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="hero-section">
+            <div class="hero-section__wrapper">
+               <div class="hero-section__greeting">
+                  <h2 class="hero-section__welcome-text">Вітаємо вас на навчальній платформі <span>Intellecta</span>
+                  </h2>
+               </div>
+               <div class="hero-section__action">
+                  <p class="hero-section__action-text">Покращуйте ерудицію разом із нами</p>
+                  <div class="hero-section__action-button">
+                     <a href="#" class="hero-section__login button">Увійти/Зареєструватися</a>
+                  </div>
+               </div>
+            </div>
+            <div class="hero-section__image">
+               <img
+                  src="@img/businessman-laptop-leader-runs-up-books-with-trophy-his-team-business-leadership-managing-skills-leadership-training-plan-concept-pinkish-coral-bluevector-isolated-illustration.png"
+                  alt="Image">
+            </div>
+         </section>
+
+         <section class="about">
+            <div class="about__wrapper">
+               <div class="about__text-block">
+                  <h2 class="about__header">
+                     Що таке Intelecta?
+                  </h2>
+                  <div class="about__text">
+                     <p>Intellecta – це інноваційний проєкт, метою якого є розвиток цифрової грамотності, підвищення
+                        рівня ерудиції та мотивації серед молодого покоління українців. Наша платформа поєднує в собі
+                        освітні ресурси з елементами гейміфікації, що робить процес навчання захоплюючим та ефективним.
+                     </p>
+                     <p>Усі матеріали перевіряються фактчекерами, гарантуючи надійність та точність інформації. На даний
+                        момент ми активно працюємо над створенням цікавих статей про видатних осіб, які не тільки
+                        розкривають важливі концепції, але й надихають читачів на досягнення власних цілей.</p>
+
+                  </div>
+               </div>
+               <div class="about__image">
+                  <img src="@img/student-centered-education-knowledge-gaining-remote-graduation.png" alt="Image">
+               </div>
+            </div>
+         </section>
+
+         <section class="study">
+            <div class="study__wrapper">
+               <div class="study__img">
+                  <img src="@img/20944805-removebg.png" alt="Image">
+               </div>
+               <div class="study__text text-block">
+                  <div class="text-block__wrapper">
+                     <h2 class="study__header header-study">Вивчай шкільні предмети цікаво</h2>
+                     <p class="study__main-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero dolorem, quia quae
+                        error neque quod deleniti nulla necessitatibus amet praesentium repellat animi aspernatur a ut
+                        nesciunt quas eius porro.
+                     </p>
+                     <button class="study__button sign-up-button button">Зареєструватися</button>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="articles">
+            <div class="articles__action">
+               <h2 class="articles__new">Нові статті</h2>
+               <button class="articles__button button">Всі статті</button>
+            </div>
+
+            <!-- Оболонка слайдера -->
+            <div class="articles__slider swiper-articles">
+               <!-- Частина слайдера, що рухається -->
+               <div class="articles__wrapper swiper-wrapper">
+                  <div class="articles__slide swiper-slide"><img src="@img/Screenshot_2559.png" alt="Image"></div>
+                  <div class="articles__slide swiper-slide"><img src="@img/Screenshot_2560.png" alt="Image"></div>
+                  <div class="articles__slide swiper-slide"><img src="@img/Screenshot_2561.png" alt="Image"></div>
+                  <div class="articles__slide swiper-slide"><img src="@img/Screenshot_2562.png" alt="Image"></div>
+               </div>
+
+               <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+               <button type="button" class="swiper-button-prev"></button>
+               <button type="button" class="swiper-button-next"></button>
+            </div>
+
+
+         </section>
+         <section class="team">
+            <div class="team__bigwrapper">
+               <h2 class="team__header">Наша команда</h2>
+               <!-- Оболонка слайдера -->
+               <div class="team__slider swiper-team">
+                  <!-- Частина слайдера, що рухається -->
+                  <div class="team__wrapper swiper-wrapper">
+                     <!-- Слайд -->
+                     <div class="team__slide swiper-slide">
+                        <div class="team__image"><img src="@img/1.webp" alt="Image"></div>
+                        <h4 class="team__name">Прізвище, Імя, ПБ</h4>
+                        <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                           officiis esse iste porro voluptas, odio commodi est excepturi</p>
+                     </div>
+                     <div class="team__slide swiper-slide">
+                        <div class="team__image"><img src="@img/1.webp" alt="Image"></div>
+                        <h4 class="team__name">Прізвище, Імя, ПБ</h4>
+                        <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                           officiis esse iste porro voluptas, odio commodi est excepturi</p>
+                     </div>
+                     <div class="team__slide swiper-slide">
+                        <div class="team__image"><img src="@img/1.webp" alt="Image"></div>
+                        <h4 class="team__name">Прізвище, Імя, ПБ</h4>
+                        <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                           officiis esse iste porro voluptas, odio commodi est excepturi</p>
+                     </div>
+                     <div class="team__slide swiper-slide">
+                        <div class="team__image"><img src="@img/1.webp" alt="Image"></div>
+                        <h4 class="team__name">Прізвище, Імя, ПБ</h4>
+                        <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                           officiis esse iste porro voluptas, odio commodi est excepturi</p>
+                     </div>
+                     <div class="team__slide swiper-slide">
+                        <div class="team__image"><img src="@img/1.webp" alt="Image"></div>
+                        <h4 class="team__name">Прізвище, Імя, ПБ</h4>
+                        <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                           officiis esse iste porro voluptas, odio commodi est excepturi</p>
+                     </div>
+                     <div class="team__slide swiper-slide">
+                        <div class="team__image"><img src="@img/1.webp" alt="Image"></div>
+                        <h4 class="team__name">Прізвище, Імя, ПБ</h4>
+                        <p class="team__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                           officiis esse iste porro voluptas, odio commodi est excepturi</p>
+                     </div>
+                  </div>
+                  <!-- Якщо потрібна пагінація -->
+
+                  <!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+                  <button type="button" class="swiper-button-prev"></button>
+                  <button type="button" class="swiper-button-next"></button>
+
+               </div>
+            </div>
+         </section>
+
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_js.htm',{})
+</body>
+
+</html>
